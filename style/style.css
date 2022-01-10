@@ -1,0 +1,11 @@
+.hero{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../images/Kunle_22.jpg);
+     /* height: 10vh; */
+  /* width: 100%; */
+  position: relative;
+  /* background: no-repeat center/cover fixed; */
+  overflow: hidden;
+}
