@@ -1,0 +1,230 @@
+/* large screen navvBar */
+.containers {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100vh repeat(1, min-content );
+}
+
+
+
+.header__nav {
+    height: 15vh;
+  background-color: #3b7471;
+  
+}
+
+.header__nav--links li {
+    list-style: none;
+     color: #fff;
+  font-weight: bold;
+
+  text-transform: uppercase;
+  /* height: 100%;
+  width: 100%; */
+}
+
+.header__nav--links li a:link,
+.header__nav--links li a:visited {
+    text-decoration: none;
+    font-size: calc(0.5rem + 1vw);
+    padding: 1rem 2rem;
+    color: white;
+    position: relative;
+}
+
+.header__nav--links li a:link::before,
+.header__nav--links li a:link::after,
+.header__nav--links li a:visited::before,
+.header__nav--links li a:visited::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0.25rem;
+    background-color: white;
+    transform: scale(0);
+    transition: transform 0.6s cubic-bezier(1, 0, 0, 1);
+}
+
+.header__nav--links li a:link::after,
+.header__nav--links li a:visited::after {
+    bottom: 0;
+    height: 0.22rem;
+    transform-origin: right;
+}
+
+.header__nav--links li a:link::before,
+.header__nav--links li a:visited::before {
+    top: 0;
+    transform-origin: left;
+}
+
+.header__nav--links li a:hover::before,
+.header__nav--links li a:hover::after,
+.header__nav--links li a:hover::before,
+.header__nav--links li a:hover::after {
+    transform: scaleX(1);
+}
+
+.header__nav--links {
+    display: flex;
+
+    align-items: center;
+    /* width: 50%; */
+    /* margin-left: auto; */
+    float: right;
+    height: 100%;
+}
+
+
+/* small screen navBar */
+
+body {
+  position: relative;
+}
+
+body .icon {
+  position: fixed;
+  z-index: 20;
+  top: 3%;
+  right: 5%;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  line-height: 200%;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: all 1s ease-in;
+  transition: all 1s ease-in;
+  background-color: rgba(182, 221, 197, 0.3);
+}
+
+body .icon.change-backGround {
+  background-color: #fff;
+}
+
+body .icon i {
+  color: #fff;
+  font-size: 2em;
+  line-height: 50px;
+  -webkit-transition: all 1s ease-in;
+  transition: all 1s ease-in;
+}
+
+body .icon i::before {
+  -webkit-transition: all 1s ease-in;
+  transition: all 1s ease-in;
+}
+
+body .icon i.clicked::before {
+  content: '\f00d';
+  color: #9599e2;
+  -webkit-transition: .3s ease-in;
+  transition: .3s ease-in;
+}
+
+
+#main .box {
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
+  z-index: 5;
+  width: 25px;
+  height: 25px;
+  border: 2px solid #e63946;
+  -webkit-transform: scale(0) rotate(0) translate(-50%, -50%);
+          transform: scale(0) rotate(0) translate(-50%, -50%);
+  animation: rotate_scale 11s ease-in-out forwards infinite;
+  -webkit-animation: rotate_scale 10s ease-in-out forwards infinite;
+}
+
+#navbar {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: linear-gradient(135deg, rgba(108, 218, 117, 0.5) 0%, rgba(126, 158, 117, 0.5) 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+#navbar ul#links {
+  list-style: none;
+  font-family: sans-serif;
+}
+
+#navbar ul#links li {
+  padding: 5px;
+  margin: 15px 0 0;
+  text-align: center;
+  position: relative;
+}
+
+#navbar ul#links li::before {
+  content: '';
+  position: absolute;
+  bottom: -5%;
+  left: -5%;
+  width: 10px;
+  height: 10px;
+  border: 3px solid #d39f9f;
+  border-top: none;
+  border-right: none;
+  -webkit-transition: all .4s ease-in;
+  transition: all .4s ease-in;
+}
+
+#navbar ul#links li:hover::before {
+  width: 100%;
+  height: 0;
+  left: 0;
+}
+
+#navbar ul#links li::after {
+  content: '';
+  position: absolute;
+  top: -5%;
+  right: -5%;
+  width: 10px;
+  height: 10px;
+  border: 3px solid #1d1c1c;
+  border-bottom: none;
+  border-left: none;
+  -webkit-transition: all .4s ease-in;
+  transition: all .4s ease-in;
+}
+
+#navbar ul#links li:hover::after {
+  width: 100%;
+  height: 0;
+  right: 0;
+}
+
+#navbar ul#links li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  height: 100%;
+  width: 100%;
+}
+footer{
+  background-color: #034844;
+ 
+  color: white;
+}
+footer .icons{
+  font-size: 30px;
+}
