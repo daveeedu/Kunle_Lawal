@@ -43,5 +43,5 @@ Personal portfolio website for Justice Adekunle Abiodun Ibrahim Lawal
 
 # Authors
 
-- [x] [ogbeidebest](www.https://github.com/ogbeidebest)
-- [x] [David Edu](www.github.com/daveedu)
+- [x] [Best Ogbeide](www.github.com/ogbeidebest)
+- [x] [David Edu](www.github.com/daveeedu)
