@@ -29,6 +29,9 @@ background-image: url(../images/landing_page_web.png);
   /* background: no-repeat center/cover fixed; */
   overflow: hidden;
 }
+.hero-iconss{
+  display: none !important;
+}
 
 .hero-image{
        background-position: center;
@@ -255,6 +258,13 @@ padding: 15px !important;
 
 
  @media only screen and (max-width: 425px){
+   .hero-icons{
+display: none !important;
+}
+.hero-iconss{
+  display: block !important;
+  font-size: 22px;
+}
 
    .hero-image{
        background-position: 50% 50%;
@@ -265,10 +275,7 @@ background-size: 300%;
      /* width: 200vh; */
  
 }
-.hero-icons{
-font-size:12px !important;
-padding: 15px !important;
-}
+
 .hero-second-div p{
     font-size: 12px !important;
     padding: 3px !important;
@@ -283,10 +290,8 @@ footer{
 }
  }
   @media only screen and (max-width: 375px){
-.hero-icons{
-font-size:25px !important;
-padding: 15px !important;
-}
+
+
 .hero-second-div p{
     font-size: 10px !important;
     padding: 3px !important;
