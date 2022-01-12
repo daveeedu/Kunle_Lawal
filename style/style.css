@@ -1,11 +1,137 @@
 .hero{
-    background-position: center;
+    /* background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
-    background-image: url(../images/Kunle_22.jpg);
-     /* height: 10vh; */
-  /* width: 100%; */
-  position: relative;
+  background-size: 100% 100% ; */
+  background-color: rgba(192, 237, 227, 0.802);
+     height: 100vh;
+  /* width: 100vh; */
+  /* position: relative; */
   /* background: no-repeat center/cover fixed; */
   overflow: hidden;
+}
+.font-1{
+ font-family: 'Roboto', sans-serif;
+ font-weight: 700;
+}
+.hero-image{
+       background-position: center;
+    background-repeat: no-repeat;
+background-size: cover;
+     height: 100vh;
+  background-image: url(../images/Kunle_166.jpeg);
+  overflow: hidden;
+}
+.hero-icons{
+font-size: 30px;
+}
+.who-is-lawa {
+    font-size: 25px;
+    color: #034844;
+
+}
+.about{
+  background-color: rgba(217, 237, 217, 0.9);
+}
+.btn-right {
+  background: none;
+  border: 0;
+  font-size: 22px;
+  line-height: 2em;
+  position: relative;
+  width: 8em;
+  height: 2em;
+}
+.btn-right a {
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  z-index: 10;
+}
+
+.btn-right::before, .btn-right::after {
+  background: #29c0d5;
+  border-radius: 2px;
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  height: 1em;
+}
+
+.btn-right::before {
+  -webkit-box-shadow: -1px 1px 0 #1897c0, -2px 2px 0 #1897c0, -3px 3px 0 #1897c0, -4px 4px 0 #1897c0;
+          box-shadow: -1px 1px 0 #1897c0, -2px 2px 0 #1897c0, -3px 3px 0 #1897c0, -4px 4px 0 #1897c0;
+  -webkit-transform: skew(45deg);
+          transform: skew(45deg);
+  top: 0;
+}
+
+.btn-right::after {
+  -webkit-box-shadow: 1px 1px 0 #1897c0, 2px 2px 0 #1897c0, 3px 3px 0 #1897c0, 4px 4px 0 #1897c0;
+          box-shadow: 1px 1px 0 #1897c0, 2px 2px 0 #1897c0, 3px 3px 0 #1897c0, 4px 4px 0 #1897c0;
+  -webkit-transform: skew(-45deg);
+          transform: skew(-45deg);
+  bottom: 0;
+}
+
+.btn-right:hover::before, .btn-right:hover::after {
+  background: #68e276;
+}
+
+.btn-right:focus {
+  outline: 0;
+}
+
+.btn-right:focus::before, .btn-right:focus::after {
+  background: #68e272;
+}
+
+ @media only screen and (max-width: 425px){
+.hero-icons{
+font-size:18px;
+padding: 15px !important;
+}
+.hero-second-div p{
+    font-size: 12px !important;
+    padding: 3px !important;
+    text-align: justify;
+}
+.hero-second-div h2{
+    font-size: 15px !important;
+}
+ }
+  @media only screen and (max-width: 375px){
+.hero-icons{
+font-size:15px;
+padding: 15px !important;
+}
+.hero-second-div p{
+    font-size: 10px !important;
+    padding: 3px !important;
+    text-align: justify;
+}
+.hero-second-div h2{
+    font-size: 12px !important;
+}
+ }
+  @media only screen and (max-width: 768px){
+.hero-icons{
+font-size:22px;
+padding: 15px !important;
+}
+.hero-second-div p{
+    font-size: 20px !important;
+    padding: 3px !important;
+    text-align: justify;
+}
+.hero-second-div h2{
+    font-size: 25px !important;
+}
+ }
+ .buttons .btn-lg :hover{ 
+  background-color: blue;
+
 }
