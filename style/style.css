@@ -15,7 +15,7 @@ background-image: url(../images/landing_page_web.png);
     /* background-position: center;
     background-repeat: no-repeat;
   background-size: 100% 100% ; */
-  background-color: rgba(192, 237, 227, 0.802);
+  background-color: rgba(250, 252, 251, 0.802);
      height: 100vh;
   /* width: 100vh; */
   /* position: relative; */
@@ -26,27 +26,31 @@ background-image: url(../images/landing_page_web.png);
 .hero-image{
        background-position: center;
     background-repeat: no-repeat;
-background-size: cover;
+    margin: top 30px;
+background-size: 85%;
      height: 100vh;
-  background-image: url(../images/Kunle_166.jpeg);
+  background-image: url(../images/Kunle_945.png);
   overflow: hidden;
 }
 
 .hero-icons{
 font-size: 30px;
 }
+.gl-heading{
+  color: #034844;
+  font-size: 40px;
+}
+.news{
+  color: #034844;
+  font-size: 40px;
+}
 
-
-
-.who-is-lawa {
+.who-is-lawa{
     font-size: 25px;
     color: #034844;
 
 }
 
-.about{
-  background-color: rgba(217, 237, 217, 0.9);
-}
 
 .photo-img-1 {
 	transition: 500ms;
@@ -244,6 +248,7 @@ padding: 15px !important;
     font-size: 12px !important;
     padding: 3px !important;
     text-align: justify;
+    color: #034844;
 }
 .hero-second-div h2{
     font-size: 15px !important;
@@ -288,3 +293,4 @@ padding: 15px !important;
             flex-direction: column;
   }
 }
+
