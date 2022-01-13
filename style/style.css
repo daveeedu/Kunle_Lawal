@@ -2,6 +2,13 @@
  font-family: 'Roboto', sans-serif;
  font-weight: 700;
 }
+.font-x p{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 300;
+  font-size: 1.3rem;
+  font-style: normal;
+  color: #034844;
+}
 
 body{
   background-position: center;
