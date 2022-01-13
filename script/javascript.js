@@ -16,3 +16,24 @@ const showNav = (e) => {
 
 //events 
 icon.addEventListener('click', showNav);
+
+// contact page
+
+var form = document.querySelector('#contact-form');
+
+form.addEventListener('submit', function (e) {
+  e.preventDefault();
+  
+  alert('Thanks for contacting us');
+}, false);
+
+var submit_form_btn = document.querySelector('#submit_form');
+
+submit_form_btn.addEventListener('click', function () {
+  if (form.checkValidity()) {
+    form.submit();
+  }
+  else {
+    form.querySelector('input[type="submit"]').click();
+  }
+}, false);
